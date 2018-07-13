@@ -1,0 +1,12 @@
+server:
+    port: 8080
+    tomcat:
+        uri-encoding: UTF-8
+logging:
+    config: classpath:logback.xml
+spring: 
+     data:
+         elasticsearch: #ElasticsearchProperties
+             cluster-name: elasticsearch #\u9ED8\u8BA4\u5373\u4E3Aelasticsearch
+             cluster-nodes: localhost:9300 #\u914D\u7F6Ees\u8282\u70B9\u4FE1\u606F\uFF0C\u9017\u53F7\u5206\u9694\uFF0C\u5982\u679C\u6CA1\u6709\u6307\u5B9A\uFF0C\u5219\u542F\u52A8ClientNode
+      
